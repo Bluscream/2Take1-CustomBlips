@@ -18,9 +18,9 @@ CustomBlips is meant to be a 2t1 LUA replacement for mods like [CustomBlips.dll]
 - Button `Clear all blips` does not clear all blips and some are coming back in online every second.
 
 ## Installation
-1. Get the latest version of [Kek's Menu](https://github.com/kektram/Keks-menu#how-to-install)
+1. Download and install the latest version of [Kek's Menu](https://github.com/kektram/Keks-menu#how-to-install)
 2. Download the latest [main.zip](https://github.com/Bluscream/2Take1-CustomBlips/archive/refs/heads/main.zip)
-3. Unpack it to your `%APPDATA%\PopstarDevs\2Take1Menu` folder
+3. Unpack it to your `%APPDATA%\PopstarDevs\2Take1Menu\` folder
 4. Verify that you have unpacked to the right location by checking wether the file `%APPDATA%\PopstarDevs\2Take1Menu\scripts\CustomBlips.lua` and the folder `%APPDATA%\PopstarDevs\2Take1Menu\cfg\blips\` exist
 
 ## Usage
