@@ -13,6 +13,7 @@ CustomBlips is meant to be a 2t1 LUA replacement for mods like [CustomBlips.dll]
 - Auto enabling last selected lists on startup
 - Reading more list formats (also read from GTAV dir instead of just 2t1)
 - Menu-based list editing and management
+- Condition-based entity blips (`not_empty=true;has_driver=true;driver_is_player=true`, ...)
 
 ## Known Issues
 - Button `Clear all blips` does not clear all blips and some are coming back in online every second.
@@ -34,7 +35,8 @@ CustomBlips is meant to be a 2t1 LUA replacement for mods like [CustomBlips.dll]
 ### If you want to contribute, feel free to open a [pull request](https://github.com/Bluscream/2Take1-CustomBlips/pulls/new).
 
 ## Credits
-- Natives using kektram's wonderful library, real hero <3
+- `scripts\kek_menu_stuff\kekMenuLibs\Kek's Natives.lua` using kektram's wonderful library, real hero <3
+- `scripts\fuelMod\ini_parser.lua` by case#0082 and kektram 🙏
 - Most of the helper functions ©️ Github Copilot
 - `Emergency Stations.blips` by [edo97@GTAV-Mods.com](https://www.gta5-mods.com/scripts/addblips)
 - `Gas Stations.blips` by [edo97@GTAV-Mods.com](https://www.gta5-mods.com/scripts/addblips)

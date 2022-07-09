@@ -2,12 +2,43 @@ local function clearConsole() for _=1, 50 do print(" ") end end
 clearConsole()
 package.path = utils.get_appdata_path("PopstarDevs", "2Take1Menu").."\\scripts\\kek_menu_stuff\\kekMenuLibs\\?.lua;"..package.path
 require("Kek's Natives")
+local ini = require("fuelMod\\ini_parser")
 
 local function create_dir(dir) if not utils.dir_exists(dir) then utils.make_dir(dir) end end
+local paths = {}
+paths.cfgDir = utils.get_appdata_path("PopstarDevs", "2Take1Menu".."\\cfg\\")
+paths.cfgFile = paths.cfgDir.."CustomBlips.ini"
+paths.blipsDir = paths.cfgDir.."blips\\"
+create_dir(paths.blipsDir)
 
-local blipsDir = utils.get_appdata_path("PopstarDevs", "2Take1Menu".."\\cfg\\blips\\")
-create_dir(blipsDir)
+local scriptSettings = {
+    general = {
+        autoExecDelayMS = 500,
+        autoLoadFromSettings = true
+    },
+    enabledStaticLists = {},
+    enabledVehicleBlips = {}
+}
 
+local function writeINI(file_path, content)
+    local file_path = file_path or paths.cfgFile
+    local content = content or scriptSettings
+    local file = io.open(file_path, "w")
+    for section_name,section_content in pairs(content) do
+        file:write("["..tostring(section_name).."]\n")
+        for item_name,item_value in pairs(section_content) do
+            file:write(tostring(item_name) .. "=" .. tostring(item_value) .. "\n")
+        end
+    end
+
+    file:close()
+end
+local function setSetting(section, key, value)
+    local section = section or "general"
+    local value = value or true
+    scriptSettings[section][key] = value
+    writeINI()
+end
 local function isCommentOrWhiteSpace(line) return line == nil or line == "" or line == " " or line == "\t" or line == "\r" or line == "\n" or line == "\r\n" or line:sub(1,3) == "-- " end
 function string.starts(String,Start) return string.sub(String,1,string.len(Start))==Start end
 local function printtable(table, indent)
@@ -262,26 +293,27 @@ local initVehicleMenu = function()
     end
     scriptMenu.items.vehicles = {}
     scriptMenu.blips.vehicles = {}
-    local vehicleDir = blipsDir.."vehicles"
+    local vehicleDir = paths.blipsDir.."vehicles"
     create_dir(vehicleDir)
     local veh_blips = loadBlipsDir(vehicleDir, true)
     -- printtable(veh_blips, 2)
     for i, _blip in ipairs(veh_blips) do
         scriptMenu.blips.vehicles[_blip.vehicle] = {}
-        table.insert(scriptMenu.items.vehicles, menu.add_feature(_blip.vehicle, "toggle", scriptMenu.vehicles.id, function(value)
+        table.insert(scriptMenu.items.vehicles, menu.add_feature(_blip.vehicle, "toggle", scriptMenu.vehicles.id, function(item)
             local Disable = function()
                 notify("Disabled Blips for Vehicle " .. _blip.vehicle, false)
                 for i,blip in ipairs(scriptMenu.blips.vehicles[_blip.vehicle]) do
                     ui.remove_blip(blip)
                 end
             end
-            if value.on then
+            setSetting("enabledVehicleBlips", _blip.vehicle, item.on)
+            if item.on then
                 notify("Enabled Blips for Vehicle " .. _blip.vehicle)
                 local vehName = string.upper(_blip.vehicle)
-                while value.on do
+                while item.on do
                     local vlist = vehicle.get_all_vehicles()
                     for i = 1, #vlist do
-                        if not value.on then
+                        if not item.on then
                             break
                         end
                         local name = vehicle.get_vehicle_model_label(vlist[i])
@@ -303,6 +335,13 @@ local initVehicleMenu = function()
             end
         end))
     end
+    for i,item in ipairs(scriptMenu.items.vehicles) do
+        local isAutostart = scriptSettings.enabledVehicleBlips[item.name]
+        if isAutostart ~= nil then
+            item.on = isAutostart
+        end
+        if system.yield~=nil then system.yield(scriptSettings.general.autoExecDelayMS) end
+    end
 end
 
 local initStaticMenu = function()
@@ -311,11 +350,12 @@ local initStaticMenu = function()
     end
     scriptMenu.items.static = {}
     scriptMenu.blips.static = {}
-    local coord_blips = loadBlipsDir(blipsDir)
+    local coord_blips = loadBlipsDir(paths.blipsDir)
     for file_name, blips in pairs(coord_blips) do
         scriptMenu.blips.static[file_name] = {}
         local name = file_name:gsub("%.blips", "")
         table.insert(scriptMenu.items.static, menu.add_feature(name, "toggle", scriptMenu.static.id, function(item)
+            setSetting("enabledVehicleBlips", _blip.vehicle, item.on)
             if item.on then
                 -- printtable(coord_blips, 2)
                 for i, _blip in ipairs(blips) do
@@ -333,6 +373,23 @@ local initStaticMenu = function()
             end
         end))
     end
+    for i,item in ipairs(scriptMenu.items.static) do
+        local isAutostart = scriptSettings.enabledStaticLists[item.name]
+        if isAutostart ~= nil then
+            item.on = isAutostart
+        end
+        if system.yield~=nil then system.yield(scriptSettings.general.autoExecDelayMS) end
+    end
+end
+
+local initSettingsMenu = function()
+    for setting,value in pairs(scriptSettings.general) do
+        local feat = "action_value_str"; local setting_return_var = "value"
+        if setting == true or setting == false then feat = "bool"; setting_return_var = "on" end
+        table.insert(scriptMenu.items.settings, menu.add_feature(setting, feat, scriptMenu.settings.id, function(item)
+            setSetting("general", item.name, item[setting_return_var])
+        end))
+    end
 end
 
 scriptMenu = {items = {}, blips = {}}
@@ -345,6 +402,9 @@ local initMenu = function()
     scriptMenu.items.static = {}
     initStaticMenu()
     menu.add_feature("Clear all blips", "action", scriptMenu.root.id, removeAllBlips)
+    scriptMenu.settings = menu.add_feature("Settings", "parent", scriptMenu.root.id)
+    scriptMenu.items.settings = {}
+    initSettingsMenu()
 end
 
 initMenu()
