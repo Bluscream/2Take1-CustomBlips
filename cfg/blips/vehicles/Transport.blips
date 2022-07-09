@@ -1,4 +1,7 @@
 -- x,y,z,vehicle,sprite,color,size,alpha,secondary_color_r,secondary_color_g,secondary_color_b,route_enabled,route_colour,player,fade_opacity,fade_duration,rotation,flash_duration,flash_p1,hidden_on_legend,high_detail,mission_creator,flashes,flashes_alternate,short_range,priority,displayid,category_index,friendly,extended_height,minimal_on_edge,bright,cone,cone_hudcolorindex,text
+-- category_index=https://docs.fivem.net/natives/?_0x234CDD44D996FD9A
+-- sprite/color=https://docs.fivem.net/docs/game-references/blips/
+
 vehicle=coach;sprite=513;color=2;size=0.75;short_range=true;category_index=7;text=Long Distance Bus
 vehicle=bus;sprite=513;size=0.75;short_range=true;text=City Bus
 vehicle=airbus;sprite=513;size=0.75;short_range=true;text=City Bus
