@@ -24,8 +24,8 @@ CustomBlips is meant to be a 2t1 LUA replacement for mods like [CustomBlips.dll]
 4. Verify that you have unpacked to the right location by checking wether the file `%APPDATA%\PopstarDevs\2Take1Menu\scripts\CustomBlips.lua` and the folder `%APPDATA%\PopstarDevs\2Take1Menu\cfg\blips\` exist
 
 ## Usage
-- To toggle a static list, click on it in the `Script Features/Custom Blips` menu.
-- To toggle a vehicle list, click on it in the `Script Features/Custom Blips/vehicles` menu.
+- To toggle a static list, click on it in the `Script Features/Custom Blips/` menu.
+- To toggle a vehicle list, click on it in the `Script Features/Custom Blips/Vehicles/` menu.
 - To clear all game blips, click on the `Script Features/Custom Blips/Clear all blips` button.
 - To clear all custom blips and disable any entity blips, unload the script.
 
