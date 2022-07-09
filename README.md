@@ -8,9 +8,9 @@ CustomBlips is meant to be a 2t1 LUA replacement for mods like [CustomBlips.dll]
 - Creation and deletion of static blips stored in *.blips files in a format similar to CSV.
 - Automatic creation and deletion of blips for entities (Currently only vehicles are supported)
 - Button to clear all existing blips (Even ones not created by this script)
+- Auto enabling last selected lists on startup
 
 ## Upcoming Features
-- Auto enabling last selected lists on startup
 - Reading more list formats (also read from GTAV dir instead of just 2t1)
 - Menu-based list editing and management
 - Condition-based entity blips (`not_empty=true;has_driver=true;driver_is_player=true`, ...)
