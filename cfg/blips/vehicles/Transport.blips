@@ -5,6 +5,6 @@
 vehicle=coach;sprite=513;color=2;size=0.75;short_range=true;category_index=7;text=Long Distance Bus
 vehicle=bus;sprite=513;size=0.75;short_range=true;text=City Bus
 vehicle=airbus;sprite=513;size=0.75;short_range=true;text=City Bus
-vehicle=taxi;sprite=198;size=0.75;short_range=true;text=Taxi
-vehicle=freight;sprite=795;size=0.75;short_range=true;text=Train
-vehicle=metrotrain;sprite=795;color=3;size=0.75;short_range=true;text=Metro
+vehicle=taxi;sprite=198;color=28;size=0.75;short_range=true;text=Taxi
+vehicle=freight;sprite=795;color=47;size=0.75;short_range=true;text=Train
+vehicle=metrotrain;sprite=795;color=3;size=0.75;short_range=true;text=Metro;route_enabled=true
