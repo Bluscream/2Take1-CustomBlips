@@ -2,7 +2,7 @@
 -- category_index=https://docs.fivem.net/natives/?_0x234CDD44D996FD9A
 -- sprite/color=https://docs.fivem.net/docs/game-references/blips/
 
--- For https://www.gta5-mods.com/scripts/los-santos-bus-service-as-client-bus-transport-service-in-los-santos-player-as-passenger-openiv
+-- For https://www.gta5-mods.com/scripts/long-travel-bus-service
 x=0;y=0;z=300;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=origin
 x=-340;y=-1814;z=23;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=MazeBankArena1
 x=-138;y=-1983;z=24;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=StationFix1
