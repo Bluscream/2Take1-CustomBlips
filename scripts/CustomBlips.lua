@@ -13,32 +13,13 @@ create_dir(paths.blipsDir)
 
 local scriptSettings = {
     general = {
-        autoExecDelayMS = 500,
+        autoExecDelayMS = 10,
         autoLoadFromSettings = true
     },
     enabledStaticLists = {},
     enabledVehicleBlips = {}
 }
 
-local function writeINI(file_path, content)
-    local file_path = file_path or paths.cfgFile
-    local content = content or scriptSettings
-    local file = io.open(file_path, "w")
-    for section_name,section_content in pairs(content) do
-        file:write("["..tostring(section_name).."]\n")
-        for item_name,item_value in pairs(section_content) do
-            file:write(tostring(item_name) .. "=" .. tostring(item_value) .. "\n")
-        end
-    end
-
-    file:close()
-end
-local function setSetting(section, key, value)
-    local section = section or "general"
-    local value = value or true
-    scriptSettings[section][key] = value
-    writeINI()
-end
 local function isCommentOrWhiteSpace(line) return line == nil or line == "" or line == " " or line == "\t" or line == "\r" or line == "\n" or line == "\r\n" or line:sub(1,3) == "-- " end
 function string.starts(String,Start) return string.sub(String,1,string.len(Start))==Start end
 local function printtable(table, indent)
@@ -128,6 +109,33 @@ local function parseString(string)
     elseif string == "false" then return false
     end return string
 end
+local function writeINI(file_path, content)
+    local file_path = file_path or paths.cfgFile
+    print("scriptSettings:")
+    printtable(scriptSettings)
+    local content = content or scriptSettings
+    print("content:")
+    printtable(content)
+    print("Writing "..tostring(content).." to "..file_path)
+    local iniFile = io.open(file_path, "w")
+    for section_name,section_content in pairs(content) do
+        if section_name ~= "save" then
+            iniFile:write("["..tostring(section_name).."]\n")
+            for item_name,item_value in pairs(section_content) do
+                iniFile:write(tostring(item_name) .. "=" .. tostring(item_value) .. "\n")
+            end
+        end
+    end
+    iniFile:close()
+end
+local function setSetting(section, key, value)
+    print("setSetting: "..section.."["..key.."] = "..tostring(value))
+    if section == "save" then return end
+    local section = section or "general"
+    local value = value or true
+    scriptSettings[section][key] = tostring(value)
+    writeINI()
+end
 local function ParseBlipLine(line, sep)
     local blip = {}
     local line = split(line, sep)
@@ -136,6 +144,13 @@ local function ParseBlipLine(line, sep)
         blip[section[1]:lower()] = parseString(section[2])
     end
     return blip
+end
+local function SetBlipText(blip, text)
+    -- local entry = "BLIP_"..text:gsub("% ", "_")
+    -- hud.add_text_entry(entry, text)
+    hud.begin_text_command_set_blip_name("STRING");
+    hud.add_text_component_substring_player_name(text);
+    hud.end_text_command_set_blip_name(blip);
 end
 local function loadBlipsCSV(file)
     print("Loading blips from file "..tostring(file))
@@ -146,7 +161,7 @@ local function loadBlipsCSV(file)
             table.insert(blips, ParseBlipLine(line, ";"))
         end
     end
-    print("Loading " .. #blips .. " blips from file "..tostring(file))
+    print("Loaded " .. #blips .. " blips from file "..tostring(file))
     return blips
 end
 local function loadBlipsDir(dir, joined)
@@ -162,16 +177,19 @@ local function loadBlipsDir(dir, joined)
     print("Loaded " .. #blips .. " blips from directory "..tostring(dir))
     return blips
 end
+local function loadSettings(file_path, default)
+    local file_path = file_path or paths.cfgFile
+    local default = default or scriptSettings
+    if utils.file_exists(file_path) then
+        scriptSettings = ini.parse(file_path)
+    else
+        notify("Failed to find config file, creating default!", false)
+        writeINI(file_path, default)
+    end
+end
 
 staticBlips = {}
 
-local function SetBlipText(blip, text)
-    -- local entry = "BLIP_"..text:gsub("% ", "_")
-    -- hud.add_text_entry(entry, text)
-    hud.begin_text_command_set_blip_name("STRING");
-    hud.add_text_component_substring_player_name(text);
-    hud.end_text_command_set_blip_name(blip);
-end
 local function AddBlip(_blip) -- x,y,z,entity,sprite,color,size,alpha,secondary_color_r,secondary_color_g,secondary_color_b,route_enabled,route_colour,player,fade_opacity,fade_duration,rotation,flash_duration,flash_p1,hidden_on_legend,high_detail,mission_creator,flashes,flashes_alternate,short_range,priority,displayid,category_index,friendly,extended_height,minimal_on_edge,bright,cone,cone_hudcolorindex,text
     local blip = _blip.x and ui.add_blip_for_coord(v3(_blip.x, _blip.y, _blip.z)) or ui.add_blip_for_entity(_blip.entity)
     if _blip.sprite then ui.set_blip_sprite(blip, _blip.sprite) end
@@ -319,9 +337,7 @@ local initVehicleMenu = function()
                         local name = vehicle.get_vehicle_model_label(vlist[i])
                         if name == vehName then
                             local blip = ui.get_blip_from_entity(vlist[i])
-                            print("blip = " .. tostring(blip))
                             if blip == 0 then
-                                print("Adding Blip for " .. name)
                                 _blip.entity = vlist[i]
                                 local blip = AddBlip(_blip)
                                 table.insert(scriptMenu.blips.vehicles[_blip.vehicle], blip)
@@ -355,7 +371,7 @@ local initStaticMenu = function()
         scriptMenu.blips.static[file_name] = {}
         local name = file_name:gsub("%.blips", "")
         table.insert(scriptMenu.items.static, menu.add_feature(name, "toggle", scriptMenu.static.id, function(item)
-            setSetting("enabledVehicleBlips", _blip.vehicle, item.on)
+            setSetting("enabledStaticLists", name, item.on)
             if item.on then
                 -- printtable(coord_blips, 2)
                 for i, _blip in ipairs(blips) do
@@ -383,6 +399,16 @@ local initStaticMenu = function()
 end
 
 local initSettingsMenu = function()
+    menu.add_feature("Save settings", "action", scriptMenu.settings.id, function()
+        writeINI()
+        notify("Saved settings.", true)
+        loadSettings(paths.cfgFile, scriptSettings)
+    end)
+    menu.add_feature("Reload settings", "action", scriptMenu.settings.id, function()
+        loadSettings(paths.cfgFile, scriptSettings)
+        notify("Settings file reloaded.")
+    end)
+
     for setting,value in pairs(scriptSettings.general) do
         local feat = "action_value_str"; local setting_return_var = "value"
         if setting == true or setting == false then feat = "bool"; setting_return_var = "on" end
@@ -407,8 +433,10 @@ local initMenu = function()
     initSettingsMenu()
 end
 
-initMenu()
-
-notify(hud.get_number_of_active_blips() .. " blips active")
-
-misc.set_this_script_can_remove_blips_created_by_any_script(true)
+menu.create_thread(function()
+    system.yield(10)
+    loadSettings()
+    initMenu()
+    notify(hud.get_number_of_active_blips() .. " blips active")
+    misc.set_this_script_can_remove_blips_created_by_any_script(true)
+end, nil)
