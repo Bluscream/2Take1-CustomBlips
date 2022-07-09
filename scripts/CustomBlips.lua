@@ -205,18 +205,31 @@ end
 --     end
 
 -- end
-
+local function removeBlip(sprite, blip, count, fails)
+    count = count+1
+    local success = ui.remove_blip(blip)
+    print("Removing blip "..tostring(blip).." ("..tostring(sprite)..")... success: "..tostring(success))
+    if not success then fails = fails+1 end
+    return {count=count, fails=fails}
+end
 local function removeNativeBlips()
+    local count = 0;local fails = 0
     for i = 3, 826 do
         local blip = hud.get_first_blip_info_id(i)
         if blip ~= 0 and hud.does_blip_exist(blip) then
-            print(i.." > get_first_blip_info_id = "..tostring(blip))
-            while hud.get_next_blip_info_id(i) ~= 0 and hud.does_blip_exist(hud.get_next_blip_info_id(i)) do
-                local next = hud.get_next_blip_info_id(i)
-                print(i.." > get_next_blip_info_id = "..tostring(next))
+            local next = hud.get_next_blip_info_id(i)
+            while next ~= 0 and hud.does_blip_exist(next) do
+                local result = removeBlip(i, next, count, fails)
+                count = result.count; fails = result.fails
+                next = hud.get_next_blip_info_id(i)
+                -- system.yield(0)
             end
+            local result = removeBlip(i, blip, count, fails)
+            count = result.count; fails = result.fails
         end
+        -- system.yield(0)
     end
+    print("Removed "..tostring(count).." blips, failed "..tostring(fails))
 end
 local function removeAllBlips()
     notify("Removing all blips")
@@ -250,7 +263,6 @@ local initMenu = function()
     menu.add_feature("Clear all blips", "action", scriptMenu.root.id, removeAllBlips)
 end
 local initVehicleMenu = function()
-    printtable(scriptMenu)
     for i,item in ipairs(scriptMenu.items.vehicles) do
         menu.delete_feature(item.id)
     end
