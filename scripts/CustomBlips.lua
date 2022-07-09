@@ -117,12 +117,15 @@ local function loadBlipsCSV(file)
     print("Loading " .. #blips .. " blips from file "..tostring(file))
     return blips
 end
-local function loadBlipsDir(dir)
-    print("Loading blips from directory "..tostring(dir))
+local function loadBlipsDir(dir, joined)
+    joined = joined or false
+    print("Loading blips from directory "..tostring(dir)..(joined and " as joined" or ""))
     local blips = {}
-    local files = utils.get_all_files_in_directory(dir, "csv")
+    local files = utils.get_all_files_in_directory(dir, "blips")
     for i,file in ipairs(files) do
-        array_concat(blips, loadBlipsCSV(dir .. "\\" .. file))
+        local file_blips = loadBlipsCSV(dir .. "\\" .. file)
+        if joined then array_concat(blips, file_blips)
+        else blips[file] = file_blips end
     end
     print("Loaded " .. #blips .. " blips from directory "..tostring(dir))
     return blips
@@ -131,19 +134,13 @@ end
 staticBlips = {}
 entityBlips = {}
 
-local function AddBlipForCoord(x, y, z)
-    local coords = v3(x, y, z)
-    local blip = ui.add_blip_for_coord(coords)
-    staticBlips[coords] = blip -- table.insert(currentBlips, blip)
-    return blip
-end
-local function AddBlipForEntity(entity,sprite,color,size,alpha,secondary_color_r,secondary_color_g,secondary_color_b,route_enabled,route_colour,player,fade_opacity,fade_duration,rotation,flash_duration,flash_p1,hidden_on_legend,high_detail,mission_creator,flashes,flashes_alternate,short_range,priority,displayid,category_index,friendly,extended_height,minimal_on_edge,bright,cone,cone_hudcolorindex,text)
-    local blip = ui.add_blip_for_entity(entity)
+local function AddBlip(x,y,z,entity,sprite,color,size,alpha,secondary_color_r,secondary_color_g,secondary_color_b,route_enabled,route_colour,player,fade_opacity,fade_duration,rotation,flash_duration,flash_p1,hidden_on_legend,high_detail,mission_creator,flashes,flashes_alternate,short_range,priority,displayid,category_index,friendly,extended_height,minimal_on_edge,bright,cone,cone_hudcolorindex,text)
+    local blip = x and ui.add_blip_for_coord(v3(x, y, z)) or ui.add_blip_for_entity(entity)
     if sprite then ui.set_blip_sprite(blip, sprite) end
     if color then ui.set_blip_colour(blip, color) end
     if secondary_color_r then hud.set_blip_secondary_colour(blip, secondary_color_r, secondary_color_g, secondary_color_b) end
     if size then hud.set_blip_scale(blip, size) end
-    if alpha then ui.set_blip_alpha(blip, alpha) end
+    if alpha then hud.set_blip_alpha(blip, alpha) end
 
     if route_enabled then ui.set_blip_route(blip, route_enabled) end
     if route_colour then ui.set_blip_route_colour(blip, route_colour) end
@@ -166,12 +163,21 @@ local function AddBlipForEntity(entity,sprite,color,size,alpha,secondary_color_r
     if minimal_on_edge then hud.set_blip_as_minimal_on_edge(blip, minimal_on_edge) end
     if bright then hud.set_blip_bright(blip, bright) end
     if cone then hud.set_blip_show_cone(blip, cone, cone_hudcolorindex) end
-    if text then
+    if text then -- broken idk why
         hud.begin_text_command_set_blip_name("STRING");
         hud.add_text_component_substring_player_name(text);
         hud.end_text_command_set_blip_name(blip);
     end
+    return blip
+end
 
+local function AddBlipForCoord(x,y,z,sprite,color,size,alpha,secondary_color_r,secondary_color_g,secondary_color_b,route_enabled,route_colour,player,fade_opacity,fade_duration,rotation,flash_duration,flash_p1,hidden_on_legend,high_detail,mission_creator,flashes,flashes_alternate,short_range,priority,displayid,category_index,friendly,extended_height,minimal_on_edge,bright,cone,cone_hudcolorindex,text)
+    local blip = AddBlip(x,y,z,nil,sprite,color,size,alpha,secondary_color_r,secondary_color_g,secondary_color_b,route_enabled,route_colour,player,fade_opacity,fade_duration,rotation,flash_duration,flash_p1,hidden_on_legend,high_detail,mission_creator,flashes,flashes_alternate,short_range,priority,displayid,category_index,friendly,extended_height,minimal_on_edge,bright,cone,cone_hudcolorindex,text)
+    staticBlips[v3(x,y,z)] = blip -- table.insert(currentBlips, blip)
+    return blip
+end
+local function AddBlipForEntity(entity,sprite,color,size,alpha,secondary_color_r,secondary_color_g,secondary_color_b,route_enabled,route_colour,player,fade_opacity,fade_duration,rotation,flash_duration,flash_p1,hidden_on_legend,high_detail,mission_creator,flashes,flashes_alternate,short_range,priority,displayid,category_index,friendly,extended_height,minimal_on_edge,bright,cone,cone_hudcolorindex,text)
+    local blip = AddBlip(nil,nil,nil,entity,sprite,color,size,alpha,secondary_color_r,secondary_color_g,secondary_color_b,route_enabled,route_colour,player,fade_opacity,fade_duration,rotation,flash_duration,flash_p1,hidden_on_legend,high_detail,mission_creator,flashes,flashes_alternate,short_range,priority,displayid,category_index,friendly,extended_height,minimal_on_edge,bright,cone,cone_hudcolorindex,text)
     entityBlips[entity] = blip -- table.insert(currentBlips, blip)
     return blip
 end
@@ -180,7 +186,7 @@ local function removeEntityBlips()
     notify("Removing " .. #entityBlips .. " entity blips")
     for k,v in pairs(entityBlips) do
         ui.remove_blip(v)
-        coroutine.yield(1)
+        -- if coroutine.yield~=nil then coroutine.yield(1) end
     end
     entityBlips = {}
 end
@@ -188,7 +194,7 @@ local function removeStaticBlips()
     notify("Removing " .. #staticBlips .. " static blips")
     for k,v in pairs(staticBlips) do
         ui.remove_blip(v)
-        coroutine.yield(1)
+        -- if coroutine.yield~=nil then coroutine.yield(1) end
     end
     staticBlips = {}
 end
@@ -255,13 +261,7 @@ local onExit = event.add_event_listener("exit",function()
     notify("CustomBlips unloaded.\nCleanup Successful.", false)
 end)
 
-scriptMenu = {items = {}}
-local initMenu = function()
-    scriptMenu.root = menu.add_feature("Custom Blips", "parent", 0)
-    scriptMenu.vehicles = menu.add_feature("Vehicles", "parent", scriptMenu.root.id)
-    scriptMenu.items.vehicles = {}
-    menu.add_feature("Clear all blips", "action", scriptMenu.root.id, removeAllBlips)
-end
+
 local initVehicleMenu = function()
     for i,item in ipairs(scriptMenu.items.vehicles) do
         menu.delete_feature(item.id)
@@ -269,21 +269,16 @@ local initVehicleMenu = function()
     scriptMenu.items.vehicles = {}
     local vehicleDir = blipsDir.."vehicles"
     create_dir(vehicleDir)
-    local veh_blips = loadBlipsDir(vehicleDir)
-    printtable(veh_blips, 2)
+    local veh_blips = loadBlipsDir(vehicleDir, true)
+    -- printtable(veh_blips, 2)
     for i, _blip in ipairs(veh_blips) do
-        local vehicleName = _blip.entity
-        local sprite = _blip.sprite
-        local color = _blip.color
-        local size = _blip.size
-        local alpha = _blip.alpha
-        table.insert(scriptMenu.items.vehicles, menu.add_feature(vehicleName, "toggle", scriptMenu.vehicles.id, function(value)
-            local vehName = string.upper(vehicleName)
+        table.insert(scriptMenu.items.vehicles, menu.add_feature(_blip.entity, "toggle", scriptMenu.vehicles.id, function(value)
+            local vehName = string.upper(_blip.entity)
             while value.on do
                 local vlist = vehicle.get_all_vehicles()
                 for i = 1, #vlist do
                     if not value.on then
-                        notify("Disabled Blips for Vehicle " .. vehicleName)
+                        notify("Disabled Blips for Vehicle " .. _blip.entity)
                         return
                     end
                     local name = vehicle.get_vehicle_model_label(vlist[i])
@@ -292,7 +287,7 @@ local initVehicleMenu = function()
                         print("blip = " .. tostring(blip))
                         if blip == 0 then
                             print("Adding Blip for " .. name)
-                            AddBlipForEntity(vlist[i], sprite, color, size, alpha)
+                            AddBlipForEntity(vlist[i], _blip.sprite, _blip.color, _blip.size, _blip.alpha)
                         end
                     end
                 end
@@ -302,8 +297,48 @@ local initVehicleMenu = function()
     end
 end
 
+local initStaticMenu = function()
+    for i,item in ipairs(scriptMenu.items.static) do
+        menu.delete_feature(item.id)
+    end
+    scriptMenu.items.static = {}
+    scriptMenu.blips.static = {}
+    local coord_blips = loadBlipsDir(blipsDir)
+    for file_name, blips in pairs(coord_blips) do
+        scriptMenu.blips.static[file_name] = {}
+        table.insert(scriptMenu.items.static, menu.add_feature(file_name, "toggle", scriptMenu.static.id, function(item)
+            if item.on then
+                -- printtable(coord_blips, 2)
+                for i, _blip in ipairs(blips) do
+                    print("Adding Blip for ".._blip.text.." at "..tostring(v3(_blip.x,_blip.y,_blip.z)))
+                    local blip = AddBlipForCoord(_blip.x,_blip.y,_blip.z,_blip.sprite,_blip.color,_blip.size,_blip.alpha)
+                    if _blip.short_range then hud.set_blip_as_short_range(blip, true) end
+                    table.insert(scriptMenu.blips.static[file_name], blip)
+                end
+                notify("Enabled "..file_name, true)
+            else
+                for i, blip in ipairs(scriptMenu.blips.static[file_name]) do
+                    ui.remove_blip(blip)
+                end
+                notify("Disabled "..file_name, false)
+            end
+        end))
+    end
+end
+
+scriptMenu = {items = {}, blips = {}}
+local initMenu = function()
+    scriptMenu.root = menu.add_feature("Custom Blips", "parent", 0)
+    scriptMenu.vehicles = menu.add_feature("Vehicles", "parent", scriptMenu.root.id)
+    scriptMenu.items.vehicles = {}
+    initVehicleMenu()
+    scriptMenu.static = menu.add_feature("Static Blips", "parent", scriptMenu.root.id)
+    scriptMenu.items.static = {}
+    initStaticMenu()
+    menu.add_feature("Clear all blips", "action", scriptMenu.root.id, removeAllBlips)
+end
+
 initMenu()
-initVehicleMenu()
 
 notify(hud.get_number_of_active_blips() .. " blips active")
 
