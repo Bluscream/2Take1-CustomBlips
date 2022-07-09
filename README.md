@@ -16,7 +16,8 @@ CustomBlips is meant to be a 2t1 LUA replacement for mods like [CustomBlips.dll]
 - Condition-based entity blips (`not_empty=true;has_driver=true;driver_is_player=true`, ...)
 
 ## Known Issues
-- Button `Clear all blips` does not clear all blips and some are coming back in online every second.
+- Button `Script Features/Custom Blips/Clear all blips` does not clear all blips and some are coming back in online every second.
+- Menu `Script Features/Custom Blips/Settings/` does not work correctly.
 
 ## Installation
 1. Download and install the latest version of [Kek's Menu](https://github.com/kektram/Keks-menu#how-to-install)
