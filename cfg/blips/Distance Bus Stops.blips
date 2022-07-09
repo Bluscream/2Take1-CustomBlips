@@ -1,29 +1,29 @@
 -- For https://www.gta5-mods.com/scripts/los-santos-bus-service-as-client-bus-transport-service-in-los-santos-player-as-passenger-openiv
-x=0;y=0;z=300;sprite=513;color=2;short_range=true;text=Distance Bus Stop (origin)
-x=-340;y=-1814;z=23;sprite=513;color=2;short_range=true;text=Distance Bus Stop (MazeBankArena1)
-x=-138;y=-1983;z=24;sprite=513;color=2;short_range=true;text=Distance Bus Stop (StationFix1)
-x=1609;y=3600;z=36;sprite=513;color=2;short_range=true;text=Distance Bus Stop (StationFix2)
-x=-144;y=-2033;z=24;sprite=513;color=2;short_range=true;text=Distance Bus Stop (StationFix3)
-x=-948;y=-2578;z=13;sprite=513;color=2;short_range=true;text=Distance Bus Stop (LSIA1)
-x=351;y=-714;z=29;sprite=513;color=2;short_range=true;text=Distance Bus Stop (Downtown1)
-x=990;y=859;z=206;sprite=513;color=2;short_range=true;text=Distance Bus Stop (VinewoodSign1)
-x=-410;y=1194;z=325;sprite=513;color=2;short_range=true;text=Distance Bus Stop (GalileoObservatory1)
-x=1555;y=878;z=77;sprite=513;color=2;short_range=true;text=Distance Bus Stop (TataviamMountains1)
-x=1801;y=3285;z=42;sprite=513;color=2;short_range=true;text=Distance Bus Stop (Airfield1)
-x=1926;y=3694;z=32;sprite=513;color=2;short_range=true;text=Distance Bus Stop (SandyShores2)
-x=1689;y=4943;z=42;sprite=513;color=2;short_range=true;text=Distance Bus Stop (Grapeseed2)
-x=2712;y=5133;z=44;sprite=513;color=2;short_range=true;text=Distance Bus Stop (MountGordo1)
-x=1419;y=6509;z=19;sprite=513;color=2;short_range=true;text=Distance Bus Stop (ProcopioBeach1)
-x=-209;y=6181;z=31;sprite=513;color=2;short_range=true;text=Distance Bus Stop (PaletoBay1)
-x=-789;y=5552;z=32;sprite=513;color=2;short_range=true;text=Distance Bus Stop (PaletoForest1)
-x=-789;y=5552;z=32;sprite=513;color=2;short_range=true;text=Distance Bus Stop (PaletoForest2)
-x=-158;y=6204;z=31;sprite=513;color=2;short_range=true;text=Distance Bus Stop (PaletoBay2)
-x=1457;y=6439;z=21;sprite=513;color=2;short_range=true;text=Distance Bus Stop (ProcopioBeach2)
-x=2722;y=5087;z=42;sprite=513;color=2;short_range=true;text=Distance Bus Stop (MountGordo2)
-x=1669;y=4951;z=42;sprite=513;color=2;short_range=true;text=Distance Bus Stop (Grapeseed1)
-x=1894;y=3697;z=32;sprite=513;color=2;short_range=true;text=Distance Bus Stop (SandyShores1)
-x=1798;y=3280;z=42;sprite=513;color=2;short_range=true;text=Distance Bus Stop (Airfield2)
-x=1441;y=775;z=77;sprite=513;color=2;short_range=true;text=Distance Bus Stop (TataviamMountains2)
-x=-406;y=1175;z=325;sprite=513;color=2;short_range=true;text=Distance Bus Stop (GalileoObservatory2)
-x=972;y=933;z=216;sprite=513;color=2;short_range=true;text=Distance Bus Stop (VinewoodSign2)
-x=327;y=-708;z=29;sprite=513;color=2;short_range=true;text=Distance Bus Stop (Downtown2)
+x=0;y=0;z=300;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=origin
+x=-340;y=-1814;z=23;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=MazeBankArena1
+x=-138;y=-1983;z=24;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=StationFix1
+x=1609;y=3600;z=36;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=StationFix2
+x=-144;y=-2033;z=24;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=StationFix3
+x=-948;y=-2578;z=13;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=LSIA1
+x=351;y=-714;z=29;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=Downtown1
+x=990;y=859;z=206;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=VinewoodSign1
+x=-410;y=1194;z=325;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=GalileoObservatory1
+x=1555;y=878;z=77;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=TataviamMountains1
+x=1801;y=3285;z=42;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=Airfield1
+x=1926;y=3694;z=32;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=SandyShores2
+x=1689;y=4943;z=42;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=Grapeseed2
+x=2712;y=5133;z=44;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=MountGordo1
+x=1419;y=6509;z=19;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=ProcopioBeach1
+x=-209;y=6181;z=31;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=PaletoBay1
+x=-789;y=5552;z=32;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=PaletoForest1
+x=-789;y=5552;z=32;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=PaletoForest2
+x=-158;y=6204;z=31;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=PaletoBay2
+x=1457;y=6439;z=21;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=ProcopioBeach2
+x=2722;y=5087;z=42;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=MountGordo2
+x=1669;y=4951;z=42;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=Grapeseed1
+x=1894;y=3697;z=32;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=SandyShores1
+x=1798;y=3280;z=42;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=Airfield2
+x=1441;y=775;z=77;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=TataviamMountains2
+x=-406;y=1175;z=325;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=GalileoObservatory2
+x=972;y=933;z=216;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=VinewoodSign2
+x=327;y=-708;z=29;sprite=513;color=2;size=0.5;alpha=150;short_range=true;text=Distance Bus Stop;name=Downtown2

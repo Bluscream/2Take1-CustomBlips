@@ -1,269 +1,269 @@
 
 -- For https://www.gta5-mods.com/scripts/los-santos-bus-service-as-client-bus-transport-service-in-los-santos-player-as-passenger-openiv
--- x=0;y=0;z=300;sprite=513;short_range=true;text=City Bus Stop (origin)
-x=-340;y=-1814;z=23;sprite=513;short_range=true;text=City Bus Stop (MazeBankArena1)
-x=-279;y=-1529;z=28;sprite=513;short_range=true;text=City Bus Stop (BJSmith1)
-x=-136;y=-1389;z=30;sprite=513;short_range=true;text=City Bus Stop (FlintsAutos2)
-x=-71;y=-1084;z=27;sprite=513;short_range=true;text=City Bus Stop (PremiumDeluxeMotorsport1)
-x=92;y=-644;z=44;sprite=513;short_range=true;text=City Bus Stop (IAA1)
-x=165;y=-424;z=41;sprite=513;short_range=true;text=City Bus Stop (Alta1)
-x=253;y=-174;z=58;sprite=513;short_range=true;text=City Bus Stop (OeuvreGalaxy1)
-x=223;y=-58;z=69;sprite=513;short_range=true;text=City Bus Stop (VinewoodPlaza1)
-x=-317;y=130;z=67;sprite=513;short_range=true;text=City Bus Stop (SpanishAve1)
-x=-827;y=-7;z=41;sprite=513;short_range=true;text=City Bus Stop (PortolaDr2)
-x=-677;y=-21;z=37;sprite=513;short_range=true;text=City Bus Stop (RockfordHills2)
-x=-313;y=121;z=68;sprite=513;short_range=true;text=City Bus Stop (SpanishAve2)
-x=228;y=-69;z=69;sprite=513;short_range=true;text=City Bus Stop (VinewoodPlaza2)
-x=239;y=-181;z=56;sprite=513;short_range=true;text=City Bus Stop (OeuvreGalaxy2)
-x=157;y=-385;z=42;sprite=513;short_range=true;text=City Bus Stop (Alta2)
-x=64;y=-652;z=44;sprite=513;short_range=true;text=City Bus Stop (UnionDepository2)
-x=-94;y=-1098;z=26;sprite=513;short_range=true;text=City Bus Stop (PremiumDeluxeMotorsport2)
-x=-169;y=-1389;z=30;sprite=513;short_range=true;text=City Bus Stop (FlintsAutos1)
-x=-287;y=-1466;z=31;sprite=513;short_range=true;text=City Bus Stop (BJSmith2)
-x=-300;y=-1843;z=25;sprite=513;short_range=true;text=City Bus Stop (MazeBankArena2)
-x=-2119;y=-242;z=16;sprite=513;short_range=true;text=City Bus Stop (PacificBluffs1)
-x=-1782;y=-348;z=44;sprite=513;short_range=true;text=City Bus Stop (WestEclipseBlvd2)
-x=-1494;y=-138;z=51;sprite=513;short_range=true;text=City Bus Stop (Morningwood2)
-x=-1426;y=99;z=51;sprite=513;short_range=true;text=City Bus Stop (Richman1)
-x=-1173;y=237;z=66;sprite=513;short_range=true;text=City Bus Stop (GolfingSociety2)
-x=-893;y=220;z=71;sprite=513;short_range=true;text=City Bus Stop (RockfordHillsNord2)
-x=-607;y=254;z=81;sprite=513;short_range=true;text=City Bus Stop (BeanMachine2)
-x=-361;y=233;z=84;sprite=513;short_range=true;text=City Bus Stop (LastTrain2)
-x=-74;y=249;z=101;sprite=513;short_range=true;text=City Bus Stop (EclipseLounge2)
-x=94;y=225;z=107;sprite=513;short_range=true;text=City Bus Stop (BishopsWTF2)
-x=336;y=87;z=97;sprite=513;short_range=true;text=City Bus Stop (FredsStore2)
-x=27;y=-976;z=28;sprite=513;short_range=true;text=City Bus Stop (PillboxHill2)
-x=170;y=-1032;z=28;sprite=513;short_range=true;text=City Bus Stop (Fleeca2)
-x=280;y=-1225;z=29;sprite=513;short_range=true;text=City Bus Stop (Strawberry2)
-x=261;y=-1181;z=29;sprite=513;short_range=true;text=City Bus Stop (Strawberry1)
-x=159;y=-1012;z=29;sprite=513;short_range=true;text=City Bus Stop (LegionSquare1)
-x=54;y=-969;z=28;sprite=513;short_range=true;text=City Bus Stop (PillboxHill1)
-x=353;y=98;z=100;sprite=513;short_range=true;text=City Bus Stop (Tsunami1)
-x=102;y=243;z=107;sprite=513;short_range=true;text=City Bus Stop (VinewoodTours1)
-x=-118;y=263;z=96;sprite=513;short_range=true;text=City Bus Stop (WestVinewood1)
-x=-377;y=249;z=83;sprite=513;short_range=true;text=City Bus Stop (LastTrain1)
-x=-602;y=270;z=81;sprite=513;short_range=true;text=City Bus Stop (DMPets1)
-x=-886;y=241;z=71;sprite=513;short_range=true;text=City Bus Stop (RockfordHillsNord1)
-x=-1179;y=257;z=66;sprite=513;short_range=true;text=City Bus Stop (GolfingSociety1)
-x=-1447;y=92;z=51;sprite=513;short_range=true;text=City Bus Stop (Richman2)
-x=-1511;y=-125;z=51;sprite=513;short_range=true;text=City Bus Stop (Morningwood1)
-x=-1773;y=-326;z=44;sprite=513;short_range=true;text=City Bus Stop (WestEclipseBlvd1)
-x=-2134;y=-227;z=16;sprite=513;short_range=true;text=City Bus Stop (PacificBluffs2)
-x=-1483;y=-710;z=26;sprite=513;short_range=true;text=City Bus Stop (DelPerro1)
-x=-1538;y=-501;z=36;sprite=513;short_range=true;text=City Bus Stop (DelPerroPlaza2)
-x=-1083;y=-229;z=38;sprite=513;short_range=true;text=City Bus Stop (LifeInvader2)
-x=-812;y=-88;z=38;sprite=513;short_range=true;text=City Bus Stop (RockfordHillsMiddle2)
-x=-170;y=-89;z=53;sprite=513;short_range=true;text=City Bus Stop (RockfordPlaza2)
-x=152;y=-205;z=54;sprite=513;short_range=true;text=City Bus Stop (HarshSouls2)
-x=296;y=-440;z=44;sprite=513;short_range=true;text=City Bus Stop (ElginAve2)
-x=216;y=-666;z=38;sprite=513;short_range=true;text=City Bus Stop (Alesandro2)
-x=119;y=-934;z=30;sprite=513;short_range=true;text=City Bus Stop (TheEmissary2)
-x=145;y=-925;z=30;sprite=513;short_range=true;text=City Bus Stop (TheEmissary1)
-x=227;y=-699;z=36;sprite=513;short_range=true;text=City Bus Stop (Alesandro1)
-x=312;y=-437;z=44;sprite=513;short_range=true;text=City Bus Stop (ElginAve1)
-x=178;y=-190;z=54;sprite=513;short_range=true;text=City Bus Stop (Heat1)
-x=-190;y=-58;z=51;sprite=513;short_range=true;text=City Bus Stop (RockfordPlaza1)
-x=-502;y=20;z=45;sprite=513;short_range=true;text=City Bus Stop (SerenityWellness1)
-x=-691;y=-7;z=38;sprite=513;short_range=true;text=City Bus Stop (RockfordHills1)
-x=-925;y=-126;z=38;sprite=513;short_range=true;text=City Bus Stop (RockfordHillsMiddle1)
-x=-1109;y=-225;z=37;sprite=513;short_range=true;text=City Bus Stop (LifeInvader1)
-x=-1415;y=-406;z=36;sprite=513;short_range=true;text=City Bus Stop (NorthRockfordDr1)
-x=-1523;y=-466;z=35;sprite=513;short_range=true;text=City Bus Stop (DelPerroPlaza1)
-x=-1497;y=-719;z=27;sprite=513;short_range=true;text=City Bus Stop (DelPerro2)
-x=-1273;y=-416;z=34;sprite=513;short_range=true;text=City Bus Stop (ElginHouse2)
-x=-1040;y=-388;z=37;sprite=513;short_range=true;text=City Bus Stop (TheArchipelago2)
-x=-683;y=-374;z=34;sprite=513;short_range=true;text=City Bus Stop (Leopolds2)
-x=-585;y=-322;z=35;sprite=513;short_range=true;text=City Bus Stop (RockfordHillsSouth2)
-x=-36;y=-266;z=46;sprite=513;short_range=true;text=City Bus Stop (OccupationAve2)
-x=-39;y=-246;z=46;sprite=513;short_range=true;text=City Bus Stop (CapitalBlvd1)
-x=-521;y=-267;z=35;sprite=513;short_range=true;text=City Bus Stop (MountZonahMedicalCenter1)
-x=-595;y=-308;z=35;sprite=513;short_range=true;text=City Bus Stop (RockfordHillsSouth1)
-x=-1165;y=-401;z=35;sprite=513;short_range=true;text=City Bus Stop (TheArchipelago1)
-x=-1259;y=-407;z=35;sprite=513;short_range=true;text=City Bus Stop (ElginHouse1)
-x=-1164;y=-141;z=39;sprite=513;short_range=true;text=City Bus Stop (VonCarstenburg2)
-x=-682;y=-375;z=34;sprite=513;short_range=true;text=City Bus Stop (Persus2)
-x=-579;y=-382;z=35;sprite=513;short_range=true;text=City Bus Stop (RockfordDorset2)
-x=-577;y=-360;z=35;sprite=513;short_range=true;text=City Bus Stop (RockfordDorset1)
-x=-688;y=-348;z=35;sprite=513;short_range=true;text=City Bus Stop (Persus1)
-x=-1184;y=-107;z=40;sprite=513;short_range=true;text=City Bus Stop (VonCarstenburg1)
-x=-1881;y=-382;z=48;sprite=513;short_range=true;text=City Bus Stop (Crastenburg1)
-x=-1757;y=-498;z=38;sprite=513;short_range=true;text=City Bus Stop (BayCityAve2)
-x=-1685;y=-570;z=35;sprite=513;short_range=true;text=City Bus Stop (BannerHotel2)
-x=-1212;y=-882;z=13;sprite=513;short_range=true;text=City Bus Stop (BurgerShot2)
-x=-694;y=-667;z=31;sprite=513;short_range=true;text=City Bus Stop (Veldez2)
-x=-601;y=-667;z=32;sprite=513;short_range=true;text=City Bus Stop (TotalBankers2)
-x=-508;y=-666;z=33;sprite=513;short_range=true;text=City Bus Stop (SnrBuns2)
-x=117;y=-809;z=31;sprite=513;short_range=true;text=City Bus Stop (FIB2)
-x=360;y=-865;z=29;sprite=513;short_range=true;text=City Bus Stop (TheAngels2)
-x=824;y=-859;z=44;sprite=513;short_range=true;text=City Bus Stop (LaMesa2)
-x=1235;y=-1313;z=35;sprite=513;short_range=true;text=City Bus Stop (ElRanchoBlvdNord2)
-x=1420;y=-1827;z=70;sprite=513;short_range=true;text=City Bus Stop (ElRanchoBlvd2)
-x=1297;y=-2021;z=45;sprite=513;short_range=true;text=City Bus Stop (ElBurroHeights1)
-x=1306;y=-2039;z=45;sprite=513;short_range=true;text=City Bus Stop (ElBurroHeights2)
-x=1435;y=-1817;z=69;sprite=513;short_range=true;text=City Bus Stop (ElRanchoBlvd1)
-x=1248;y=-1339;z=35;sprite=513;short_range=true;text=City Bus Stop (ElRanchoBlvdNord1)
-x=814;y=-842;z=43;sprite=513;short_range=true;text=City Bus Stop (LaMesa1)
-x=369;y=-844;z=29;sprite=513;short_range=true;text=City Bus Stop (TheAngels1)
-x=117;y=-786;z=31;sprite=513;short_range=true;text=City Bus Stop (FIB1)
-x=-592;y=-650;z=32;sprite=513;short_range=true;text=City Bus Stop (TotalBankers1)
-x=-1229;y=-874;z=13;sprite=513;short_range=true;text=City Bus Stop (BurgerShot1)
-x=-1676;y=-551;z=35;sprite=513;short_range=true;text=City Bus Stop (BannerHotel1)
-x=-1733;y=-500;z=38;sprite=513;short_range=true;text=City Bus Stop (BayCityAve1)
-x=386;y=-672;z=29;sprite=513;short_range=true;text=City Bus Stop (Dashhound1)
-x=-1026;y=-295;z=38;sprite=513;short_range=true;text=City Bus Stop (LifeInvaderSouth1)
-x=-1040;y=-299;z=38;sprite=513;short_range=true;text=City Bus Stop (LifeInvaderSouth2)
-x=409;y=-717;z=29;sprite=513;short_range=true;text=City Bus Stop (TenCent1)
-x=920;y=-2254;z=30;sprite=513;short_range=true;text=City Bus Stop (OrchardvilleAve1)
-x=935;y=-1754;z=31;sprite=513;short_range=true;text=City Bus Stop (Pisswasser1)
-x=847;y=-1683;z=29;sprite=513;short_range=true;text=City Bus Stop (Fridgit1)
-x=286;y=-1294;z=30;sprite=513;short_range=true;text=City Bus Stop (XeroGas1)
-x=231;y=-1201;z=29;sprite=513;short_range=true;text=City Bus Stop (StrawberryNord1)
-x=-222;y=-591;z=34;sprite=513;short_range=true;text=City Bus Stop (ArcadiusBusinessCenter1)
-x=-265;y=-275;z=31;sprite=513;short_range=true;text=City Bus Stop (RockfordPlazaWest1)
-x=-220;y=208;z=85;sprite=513;short_range=true;text=City Bus Stop (TheDungeonCrawler1)
-x=-231;y=217;z=86;sprite=513;short_range=true;text=City Bus Stop (TheDungeonCrawler2)
-x=-294;y=-260;z=33;sprite=513;short_range=true;text=City Bus Stop (RockfordPlazaWest2)
-x=-248;y=-599;z=34;sprite=513;short_range=true;text=City Bus Stop (ArcadiusBusinessCenter2)
-x=205;y=-1210;z=29;sprite=513;short_range=true;text=City Bus Stop (StrawberryNord2)
-x=273;y=-1317;z=30;sprite=513;short_range=true;text=City Bus Stop (XeroGas2)
-x=826;y=-1638;z=30;sprite=513;short_range=true;text=City Bus Stop (Fridgit2)
-x=877;y=-1766;z=30;sprite=513;short_range=true;text=City Bus Stop (Pisswasser2)
-x=914;y=-2222;z=30;sprite=513;short_range=true;text=City Bus Stop (OrchardvilleAve2)
-x=-1394;y=-950;z=10;sprite=513;short_range=true;text=City Bus Stop (MagellanAveNorth2)
-x=-1163;y=-956;z=3;sprite=513;short_range=true;text=City Bus Stop (LSPD2)
-x=-795;y=-999;z=14;sprite=513;short_range=true;text=City Bus Stop (GingerSt2)
-x=-561;y=-844;z=27;sprite=513;short_range=true;text=City Bus Stop (DiscountStore2)
-x=-251;y=-882;z=31;sprite=513;short_range=true;text=City Bus Stop (GPostal2)
-x=265;y=-1061;z=29;sprite=513;short_range=true;text=City Bus Stop (MissionRow2)
-x=354;y=-1063;z=29;sprite=513;short_range=true;text=City Bus Stop (GroundAndPoundCafe2)
-x=591;y=-1035;z=37;sprite=513;short_range=true;text=City Bus Stop (LaMesaSouth2)
-x=914;y=-1005;z=36;sprite=513;short_range=true;text=City Bus Stop (MurrietaHeights2)
-x=888;y=-998;z=33;sprite=513;short_range=true;text=City Bus Stop (MurrietaHeights1)
-x=596;y=-1017;z=37;sprite=513;short_range=true;text=City Bus Stop (LaMesaSouth1)
-x=278;y=-1039;z=29;sprite=513;short_range=true;text=City Bus Stop (PipeDownCigars1)
-x=-239;y=-863;z=31;sprite=513;short_range=true;text=City Bus Stop (GPostal1)
-x=-710;y=-829;z=23;sprite=513;short_range=true;text=City Bus Stop (ArirangPlaza1)
-x=-898;y=-828;z=18;sprite=513;short_range=true;text=City Bus Stop (LittleSeoul1)
-x=-1182;y=-960;z=4;sprite=513;short_range=true;text=City Bus Stop (LSPD1)
-x=-1374;y=-968;z=9;sprite=513;short_range=true;text=City Bus Stop (Seagrass1)
-x=309;y=-765;z=29;sprite=513;short_range=true;text=City Bus Stop (KRAPEA2)
-x=246;y=-940;z=29;sprite=513;short_range=true;text=City Bus Stop (LegionSquareNord2)
-x=-106;y=-1686;z=29;sprite=513;short_range=true;text=City Bus Stop (StrawberryAve2)
-x=-1008;y=-2472;z=14;sprite=513;short_range=true;text=City Bus Stop (NewEmpireWay2)
-x=-1041;y=-2718;z=14;sprite=513;short_range=true;text=City Bus Stop (LSIA2)
-x=49;y=-1537;z=29;sprite=513;short_range=true;text=City Bus Stop (DollarPills1)
-x=278;y=-915;z=29;sprite=513;short_range=true;text=City Bus Stop (LegionSquareNord1)
-x=530;y=150;z=99;sprite=513;short_range=true;text=City Bus Stop (VinewoodPlazaWest2)
-x=361;y=-221;z=55;sprite=513;short_range=true;text=City Bus Stop (PinkCageMotel2)
-x=68;y=-1077;z=29;sprite=513;short_range=true;text=City Bus Stop (LSGC2)
-x=61;y=-1312;z=29;sprite=513;short_range=true;text=City Bus Stop (Ferns2)
-x=252;y=-1472;z=29;sprite=513;short_range=true;text=City Bus Stop (CentralLSMedicalCenter2)
-x=395;y=-1591;z=29;sprite=513;short_range=true;text=City Bus Stop (LSPDWest2)
-x=228;y=-1893;z=25;sprite=513;short_range=true;text=City Bus Stop (RoyLowensteinBlvd2)
-x=264;y=-2119;z=16;sprite=513;short_range=true;text=City Bus Stop (DutchLondonSt2)
-x=747;y=-2215;z=29;sprite=513;short_range=true;text=City Bus Stop (PopularSt2)
-x=745;y=-2967;z=5;sprite=513;short_range=true;text=City Bus Stop (JetsamTerminal2)
-x=769;y=-2316;z=27;sprite=513;short_range=true;text=City Bus Stop (PopularSt1)
-x=281;y=-2107;z=16;sprite=513;short_range=true;text=City Bus Stop (DutchLondonSt1)
-x=359;y=-1784;z=29;sprite=513;short_range=true;text=City Bus Stop (RoyLowensteinBlvd1)
-x=382;y=-1558;z=29;sprite=513;short_range=true;text=City Bus Stop (LSPDWest1)
-x=281;y=-1467;z=29;sprite=513;short_range=true;text=City Bus Stop (CentralLSMedicalCenter1)
-x=92;y=-1321;z=29;sprite=513;short_range=true;text=City Bus Stop (VanillaUnicorn1)
-x=81;y=-1090;z=29;sprite=513;short_range=true;text=City Bus Stop (WolfsInternationBeauty1)
-x=389;y=-205;z=58;sprite=513;short_range=true;text=City Bus Stop (PinkCageMotel1)
-x=543;y=154;z=99;sprite=513;short_range=true;text=City Bus Stop (VinewoodPlazaWest1)
-x=1298;y=-1639;z=51;sprite=513;short_range=true;text=City Bus Stop (LSTattoos1)
-x=584;y=-1711;z=29;sprite=513;short_range=true;text=City Bus Stop (BilingsgateMotel1)
-x=192;y=1578;z=29;sprite=513;short_range=true;text=City Bus Stop (PublicLibrary1)
-x=-13;y=-1692;z=28;sprite=513;short_range=true;text=City Bus Stop (DavisMegaMall1)
-x=-41;y=-1721;z=28;sprite=513;short_range=true;text=City Bus Stop (DavisMegaMall2)
-x=281;y=-1550;z=29;sprite=513;short_range=true;text=City Bus Stop (PublicLibrary2)
-x=774;y=-1750;z=29;sprite=513;short_range=true;text=City Bus Stop (PisswasserWest2)
-x=567;y=-1729;z=29;sprite=513;short_range=true;text=City Bus Stop (BilingsgateMotel2)
-x=1287;y=-1656;z=50;sprite=513;short_range=true;text=City Bus Stop (LSTattoos2)
-x=213;y=251;z=106;sprite=513;short_range=true;text=City Bus Stop (DesignerSlave2)
-x=130;y=6;z=68;sprite=513;short_range=true;text=City Bus Stop (PopsPills2)
-x=-33;y=-421;z=40;sprite=513;short_range=true;text=City Bus Stop (AltaSt2)
-x=-96;y=-612;z=36;sprite=513;short_range=true;text=City Bus Stop (ArcadiusBusinessCenterWest2)
-x=-171;y=-818;z=31;sprite=513;short_range=true;text=City Bus Stop (GruppeSechs2)
-x=-257;y=-1049;z=27;sprite=513;short_range=true;text=City Bus Stop (BannerHotelNorth2)
-x=-290;y=-1318;z=31;sprite=513;short_range=true;text=City Bus Stop (LarrysLeanPork2)
-x=117;y=-1743;z=29;sprite=513;short_range=true;text=City Bus Stop (DavisMegaMallEast2)
-x=440;y=-2028;z=23;sprite=513;short_range=true;text=City Bus Stop (DavisElectricals2)
-x=436;y=-1991;z=23;sprite=513;short_range=true;text=City Bus Stop (CarsonAve1)
-x=127;y=-1717;z=29;sprite=513;short_range=true;text=City Bus Stop (HerrKutzBarber1)
-x=-267;y=-1330;z=31;sprite=513;short_range=true;text=City Bus Stop (BennysOriginalMotorWorks1)
-x=-218;y=-1007;z=29;sprite=513;short_range=true;text=City Bus Stop (BannerHotelNorth1)
-x=-158;y=-847;z=30;sprite=513;short_range=true;text=City Bus Stop (MazeBank1)
-x=-77;y=-624;z=36;sprite=513;short_range=true;text=City Bus Stop (FourIntegrityWay1)
-x=-13;y=-429;z=40;sprite=513;short_range=true;text=City Bus Stop (AltaSt1)
-x=139;y=0;z=68;sprite=513;short_range=true;text=City Bus Stop (PopsPills1)
-x=241;y=280;z=106;sprite=513;short_range=true;text=City Bus Stop (Singletons1)
-x=-546;y=-718;z=33;sprite=513;short_range=true;text=City Bus Stop (SnrBunsSouth2)
-x=-546;y=-1018;z=23;sprite=513;short_range=true;text=City Bus Stop (LittleSeoulEast2)
-x=-588;y=-1228;z=15;sprite=513;short_range=true;text=City Bus Stop (SHoKoreanNoodleHouse2)
-x=-167;y=-2108;z=25;sprite=513;short_range=true;text=City Bus Stop (MazeBankArenaSouth2)
-x=883;y=-2087;z=30;sprite=513;short_range=true;text=City Bus Stop (ElRanchoBlvdWest2)
-x=1203;y=-2078;z=44;sprite=513;short_range=true;text=City Bus Stop (ElBurroHeightsWest2)
-x=867;y=-2068;z=30;sprite=513;short_range=true;text=City Bus Stop (ElRanchoBlvdWest1)
-x=-253;y=-2120;z=22;sprite=513;short_range=true;text=City Bus Stop (MazeBankArenaSouth1)
-x=-580;y=-1244;z=13;sprite=513;short_range=true;text=City Bus Stop (SHoKoreanNoodleHouse1)
-x=-531;y=-1022;z=23;sprite=513;short_range=true;text=City Bus Stop (LittleSeoulEast1)
-x=-530;y=-726;z=33;sprite=513;short_range=true;text=City Bus Stop (SnrBunsSouth1)
-x=171;y=495;z=143;sprite=513;short_range=true;text=City Bus Stop (WildOatsDrEast1)
-x=-257;y=505;z=123;sprite=513;short_range=true;text=City Bus Stop (WildOatsDr1)
-x=-458;y=552;z=121;sprite=513;short_range=true;text=City Bus Stop (DidionDr1)
-x=-672;y=495;z=110;sprite=513;short_range=true;text=City Bus Stop (PicturePerfectDrive1)
-x=-1088;y=220;z=62;sprite=513;short_range=true;text=City Bus Stop (MadWayneThunderDr2)
-x=-675;y=-290;z=36;sprite=513;short_range=true;text=City Bus Stop (SessantaNove2)
-x=-652;y=-605;z=33;sprite=513;short_range=true;text=City Bus Stop (Lombank2)
-x=-699;y=-1062;z=14;sprite=513;short_range=true;text=City Bus Stop (CrastenbergHotel2)
-x=-1018;y=-1248;z=6;sprite=513;short_range=true;text=City Bus Stop (PalominoAve2)
-x=-1169;y=-1470;z=3;sprite=513;short_range=true;text=City Bus Stop (MagellanAve2)
-x=-1043;y=-1644;z=4;sprite=513;short_range=true;text=City Bus Stop (PuertoDelSol2)
-x=-1203;y=-1408;z=4;sprite=513;short_range=true;text=City Bus Stop (MagellanAve1)
-x=-877;y=-1191;z=5;sprite=513;short_range=true;text=City Bus Stop (TheViceroyHotel1)
-x=-705;y=-1087;z=13;sprite=513;short_range=true;text=City Bus Stop (PalominoAve1)
-x=-624;y=-612;z=33;sprite=513;short_range=true;text=City Bus Stop (BetsyONeilPavilion1)
-x=-647;y=-301;z=35;sprite=513;short_range=true;text=City Bus Stop (HelgaKreppsohle1)
-x=-1057;y=181;z=60;sprite=513;short_range=true;text=City Bus Stop (SteeleWay1)
-x=-673;y=491;z=110;sprite=513;short_range=true;text=City Bus Stop (PicturePerfectDrive2)
-x=-457;y=547;z=121;sprite=513;short_range=true;text=City Bus Stop (DidionDr2)
-x=-266;y=503;z=121;sprite=513;short_range=true;text=City Bus Stop (WildOatsDr2)
-x=201;y=501;z=141;sprite=513;short_range=true;text=City Bus Stop (WildOatsDrEast2)
-x=-1664;y=963;z=152;sprite=513;short_range=true;text=City Bus Stop (NorthRockfordDrNorth2)
-x=-1919;y=681;z=126;sprite=513;short_range=true;text=City Bus Stop (NorthRockfordDrMiddle2)
-x=-1962;y=300;z=88;sprite=513;short_range=true;text=City Bus Stop (NorthRockfordDrSouth2)
-x=-1777;y=58;z=68;sprite=513;short_range=true;text=City Bus Stop (KortzCenter2)
-x=-1474;y=-300;z=47;sprite=513;short_range=true;text=City Bus Stop (LasCuadras2)
-x=-1272;y=-555;z=30;sprite=513;short_range=true;text=City Bus Stop (CityHall2)
-x=-1051;y=-801;z=19;sprite=513;short_range=true;text=City Bus Stop (LSPDNorth2)
-x=-764;y=-1150;z=11;sprite=513;short_range=true;text=City Bus Stop (TheViceroyHotelSouth2)
-x=-746;y=-1138;z=11;sprite=513;short_range=true;text=City Bus Stop (BSC1)
-x=-1035;y=-786;z=18;sprite=513;short_range=true;text=City Bus Stop (Celltowa1)
-x=-1250;y=-548;z=30;sprite=513;short_range=true;text=City Bus Stop (CityHall1)
-x=-1507;y=-230;z=51;sprite=513;short_range=true;text=City Bus Stop (Chido1)
-x=-1700;y=18;z=65;sprite=513;short_range=true;text=City Bus Stop (KortzCenter1)
-x=-1948;y=270;z=86;sprite=513;short_range=true;text=City Bus Stop (NorthRockfordDrSouth1)
-x=-1902;y=689;z=127;sprite=513;short_range=true;text=City Bus Stop (NorthRockfordDrMiddle1)
-x=-1653;y=974;z=152;sprite=513;short_range=true;text=City Bus Stop (NorthRockfordDrNorth1)
-x=-1211;y=-1216;z=8;sprite=513;short_range=true;text=City Bus Stop (VespucciCanals2)
-x=-1204;y=-1192;z=8;sprite=513;short_range=true;text=City Bus Stop (VespucciCanals1)
-x=777;y=-938;z=26;sprite=513;short_range=true;text=City Bus Stop (DarnellBros2)
-x=789;y=-1367;z=27;sprite=513;short_range=true;text=City Bus Stop (LosSantosBagCo2)
-x=806;y=-1355;z=26;sprite=513;short_range=true;text=City Bus Stop (LosSantosBagCo1)
-x=784;y=-779;z=26;sprite=513;short_range=true;text=City Bus Stop (PopularStNorth1)
-x=-2980;y=409;z=16;sprite=513;short_range=true;text=City Bus Stop (RobsLiquor1)
-x=-3075;y=777;z=21;sprite=513;short_range=true;text=City Bus Stop (BanhamCanyon1)
-x=-2363;y=3429;z=29;sprite=513;short_range=true;text=City Bus Stop (FortZancudo2)
-x=-2355;y=3432;z=29;sprite=513;short_range=true;text=City Bus Stop (FortZancudo1)
-x=-3095;y=766;z=21;sprite=513;short_range=true;text=City Bus Stop (BanhamCanyon2)
-x=-3002;y=416;z=16;sprite=513;short_range=true;text=City Bus Stop (RobsLiquor2)
-x=-1479;y=-632;z=30;sprite=513;short_range=true;text=City Bus Stop (MarathonAv2)
-x=-1410;y=-571;z=30;sprite=513;short_range=true;text=City Bus Stop (MarathonAv1)
-x=505;y=-1878;z=27;sprite=513;short_range=true;text=City Bus Stop (AutoRepairs1)
-x=310;y=-1693;z=30;sprite=513;short_range=true;text=City Bus Stop (HayesAutos1)
-x=126;y=-1550;z=30;sprite=513;short_range=true;text=City Bus Stop (LaVacaLoca1)
-x=108;y=-1551;z=30;sprite=513;short_range=true;text=City Bus Stop (SudsLawLaundromat2)
-x=289;y=-1682;z=30;sprite=513;short_range=true;text=City Bus Stop (HayesAuto2)
-x=491;y=-1864;z=28;sprite=513;short_range=true;text=City Bus Stop (AutoRepairs2)
+-- x=0;y=0;z=300;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=origin
+x=-340;y=-1814;z=23;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MazeBankArena1
+x=-279;y=-1529;z=28;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BJSmith1
+x=-136;y=-1389;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=FlintsAutos2
+x=-71;y=-1084;z=27;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PremiumDeluxeMotorsport1
+x=92;y=-644;z=44;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=IAA1
+x=165;y=-424;z=41;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Alta1
+x=253;y=-174;z=58;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=OeuvreGalaxy1
+x=223;y=-58;z=69;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=VinewoodPlaza1
+x=-317;y=130;z=67;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=SpanishAve1
+x=-827;y=-7;z=41;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PortolaDr2
+x=-677;y=-21;z=37;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordHills2
+x=-313;y=121;z=68;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=SpanishAve2
+x=228;y=-69;z=69;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=VinewoodPlaza2
+x=239;y=-181;z=56;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=OeuvreGalaxy2
+x=157;y=-385;z=42;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Alta2
+x=64;y=-652;z=44;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=UnionDepository2
+x=-94;y=-1098;z=26;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PremiumDeluxeMotorsport2
+x=-169;y=-1389;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=FlintsAutos1
+x=-287;y=-1466;z=31;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BJSmith2
+x=-300;y=-1843;z=25;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MazeBankArena2
+x=-2119;y=-242;z=16;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PacificBluffs1
+x=-1782;y=-348;z=44;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=WestEclipseBlvd2
+x=-1494;y=-138;z=51;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Morningwood2
+x=-1426;y=99;z=51;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Richman1
+x=-1173;y=237;z=66;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=GolfingSociety2
+x=-893;y=220;z=71;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordHillsNord2
+x=-607;y=254;z=81;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BeanMachine2
+x=-361;y=233;z=84;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LastTrain2
+x=-74;y=249;z=101;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=EclipseLounge2
+x=94;y=225;z=107;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BishopsWTF2
+x=336;y=87;z=97;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=FredsStore2
+x=27;y=-976;z=28;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PillboxHill2
+x=170;y=-1032;z=28;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Fleeca2
+x=280;y=-1225;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Strawberry2
+x=261;y=-1181;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Strawberry1
+x=159;y=-1012;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LegionSquare1
+x=54;y=-969;z=28;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PillboxHill1
+x=353;y=98;z=100;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Tsunami1
+x=102;y=243;z=107;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=VinewoodTours1
+x=-118;y=263;z=96;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=WestVinewood1
+x=-377;y=249;z=83;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LastTrain1
+x=-602;y=270;z=81;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DMPets1
+x=-886;y=241;z=71;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordHillsNord1
+x=-1179;y=257;z=66;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=GolfingSociety1
+x=-1447;y=92;z=51;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Richman2
+x=-1511;y=-125;z=51;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Morningwood1
+x=-1773;y=-326;z=44;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=WestEclipseBlvd1
+x=-2134;y=-227;z=16;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PacificBluffs2
+x=-1483;y=-710;z=26;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DelPerro1
+x=-1538;y=-501;z=36;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DelPerroPlaza2
+x=-1083;y=-229;z=38;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LifeInvader2
+x=-812;y=-88;z=38;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordHillsMiddle2
+x=-170;y=-89;z=53;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordPlaza2
+x=152;y=-205;z=54;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=HarshSouls2
+x=296;y=-440;z=44;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElginAve2
+x=216;y=-666;z=38;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Alesandro2
+x=119;y=-934;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TheEmissary2
+x=145;y=-925;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TheEmissary1
+x=227;y=-699;z=36;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Alesandro1
+x=312;y=-437;z=44;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElginAve1
+x=178;y=-190;z=54;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Heat1
+x=-190;y=-58;z=51;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordPlaza1
+x=-502;y=20;z=45;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=SerenityWellness1
+x=-691;y=-7;z=38;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordHills1
+x=-925;y=-126;z=38;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordHillsMiddle1
+x=-1109;y=-225;z=37;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LifeInvader1
+x=-1415;y=-406;z=36;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=NorthRockfordDr1
+x=-1523;y=-466;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DelPerroPlaza1
+x=-1497;y=-719;z=27;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DelPerro2
+x=-1273;y=-416;z=34;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElginHouse2
+x=-1040;y=-388;z=37;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TheArchipelago2
+x=-683;y=-374;z=34;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Leopolds2
+x=-585;y=-322;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordHillsSouth2
+x=-36;y=-266;z=46;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=OccupationAve2
+x=-39;y=-246;z=46;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=CapitalBlvd1
+x=-521;y=-267;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MountZonahMedicalCenter1
+x=-595;y=-308;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordHillsSouth1
+x=-1165;y=-401;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TheArchipelago1
+x=-1259;y=-407;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElginHouse1
+x=-1164;y=-141;z=39;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=VonCarstenburg2
+x=-682;y=-375;z=34;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Persus2
+x=-579;y=-382;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordDorset2
+x=-577;y=-360;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordDorset1
+x=-688;y=-348;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Persus1
+x=-1184;y=-107;z=40;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=VonCarstenburg1
+x=-1881;y=-382;z=48;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Crastenburg1
+x=-1757;y=-498;z=38;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BayCityAve2
+x=-1685;y=-570;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BannerHotel2
+x=-1212;y=-882;z=13;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BurgerShot2
+x=-694;y=-667;z=31;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Veldez2
+x=-601;y=-667;z=32;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TotalBankers2
+x=-508;y=-666;z=33;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=SnrBuns2
+x=117;y=-809;z=31;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=FIB2
+x=360;y=-865;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TheAngels2
+x=824;y=-859;z=44;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LaMesa2
+x=1235;y=-1313;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElRanchoBlvdNord2
+x=1420;y=-1827;z=70;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElRanchoBlvd2
+x=1297;y=-2021;z=45;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElBurroHeights1
+x=1306;y=-2039;z=45;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElBurroHeights2
+x=1435;y=-1817;z=69;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElRanchoBlvd1
+x=1248;y=-1339;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElRanchoBlvdNord1
+x=814;y=-842;z=43;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LaMesa1
+x=369;y=-844;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TheAngels1
+x=117;y=-786;z=31;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=FIB1
+x=-592;y=-650;z=32;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TotalBankers1
+x=-1229;y=-874;z=13;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BurgerShot1
+x=-1676;y=-551;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BannerHotel1
+x=-1733;y=-500;z=38;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BayCityAve1
+x=386;y=-672;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Dashhound1
+x=-1026;y=-295;z=38;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LifeInvaderSouth1
+x=-1040;y=-299;z=38;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LifeInvaderSouth2
+x=409;y=-717;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TenCent1
+x=920;y=-2254;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=OrchardvilleAve1
+x=935;y=-1754;z=31;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Pisswasser1
+x=847;y=-1683;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Fridgit1
+x=286;y=-1294;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=XeroGas1
+x=231;y=-1201;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=StrawberryNord1
+x=-222;y=-591;z=34;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ArcadiusBusinessCenter1
+x=-265;y=-275;z=31;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordPlazaWest1
+x=-220;y=208;z=85;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TheDungeonCrawler1
+x=-231;y=217;z=86;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TheDungeonCrawler2
+x=-294;y=-260;z=33;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RockfordPlazaWest2
+x=-248;y=-599;z=34;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ArcadiusBusinessCenter2
+x=205;y=-1210;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=StrawberryNord2
+x=273;y=-1317;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=XeroGas2
+x=826;y=-1638;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Fridgit2
+x=877;y=-1766;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Pisswasser2
+x=914;y=-2222;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=OrchardvilleAve2
+x=-1394;y=-950;z=10;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MagellanAveNorth2
+x=-1163;y=-956;z=3;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LSPD2
+x=-795;y=-999;z=14;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=GingerSt2
+x=-561;y=-844;z=27;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DiscountStore2
+x=-251;y=-882;z=31;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=GPostal2
+x=265;y=-1061;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MissionRow2
+x=354;y=-1063;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=GroundAndPoundCafe2
+x=591;y=-1035;z=37;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LaMesaSouth2
+x=914;y=-1005;z=36;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MurrietaHeights2
+x=888;y=-998;z=33;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MurrietaHeights1
+x=596;y=-1017;z=37;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LaMesaSouth1
+x=278;y=-1039;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PipeDownCigars1
+x=-239;y=-863;z=31;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=GPostal1
+x=-710;y=-829;z=23;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ArirangPlaza1
+x=-898;y=-828;z=18;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LittleSeoul1
+x=-1182;y=-960;z=4;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LSPD1
+x=-1374;y=-968;z=9;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Seagrass1
+x=309;y=-765;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=KRAPEA2
+x=246;y=-940;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LegionSquareNord2
+x=-106;y=-1686;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=StrawberryAve2
+x=-1008;y=-2472;z=14;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=NewEmpireWay2
+x=-1041;y=-2718;z=14;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LSIA2
+x=49;y=-1537;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DollarPills1
+x=278;y=-915;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LegionSquareNord1
+x=530;y=150;z=99;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=VinewoodPlazaWest2
+x=361;y=-221;z=55;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PinkCageMotel2
+x=68;y=-1077;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LSGC2
+x=61;y=-1312;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Ferns2
+x=252;y=-1472;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=CentralLSMedicalCenter2
+x=395;y=-1591;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LSPDWest2
+x=228;y=-1893;z=25;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RoyLowensteinBlvd2
+x=264;y=-2119;z=16;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DutchLondonSt2
+x=747;y=-2215;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PopularSt2
+x=745;y=-2967;z=5;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=JetsamTerminal2
+x=769;y=-2316;z=27;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PopularSt1
+x=281;y=-2107;z=16;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DutchLondonSt1
+x=359;y=-1784;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RoyLowensteinBlvd1
+x=382;y=-1558;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LSPDWest1
+x=281;y=-1467;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=CentralLSMedicalCenter1
+x=92;y=-1321;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=VanillaUnicorn1
+x=81;y=-1090;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=WolfsInternationBeauty1
+x=389;y=-205;z=58;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PinkCageMotel1
+x=543;y=154;z=99;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=VinewoodPlazaWest1
+x=1298;y=-1639;z=51;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LSTattoos1
+x=584;y=-1711;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BilingsgateMotel1
+x=192;y=1578;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PublicLibrary1
+x=-13;y=-1692;z=28;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DavisMegaMall1
+x=-41;y=-1721;z=28;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DavisMegaMall2
+x=281;y=-1550;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PublicLibrary2
+x=774;y=-1750;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PisswasserWest2
+x=567;y=-1729;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BilingsgateMotel2
+x=1287;y=-1656;z=50;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LSTattoos2
+x=213;y=251;z=106;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DesignerSlave2
+x=130;y=6;z=68;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PopsPills2
+x=-33;y=-421;z=40;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=AltaSt2
+x=-96;y=-612;z=36;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ArcadiusBusinessCenterWest2
+x=-171;y=-818;z=31;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=GruppeSechs2
+x=-257;y=-1049;z=27;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BannerHotelNorth2
+x=-290;y=-1318;z=31;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LarrysLeanPork2
+x=117;y=-1743;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DavisMegaMallEast2
+x=440;y=-2028;z=23;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DavisElectricals2
+x=436;y=-1991;z=23;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=CarsonAve1
+x=127;y=-1717;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=HerrKutzBarber1
+x=-267;y=-1330;z=31;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BennysOriginalMotorWorks1
+x=-218;y=-1007;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BannerHotelNorth1
+x=-158;y=-847;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MazeBank1
+x=-77;y=-624;z=36;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=FourIntegrityWay1
+x=-13;y=-429;z=40;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=AltaSt1
+x=139;y=0;z=68;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PopsPills1
+x=241;y=280;z=106;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Singletons1
+x=-546;y=-718;z=33;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=SnrBunsSouth2
+x=-546;y=-1018;z=23;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LittleSeoulEast2
+x=-588;y=-1228;z=15;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=SHoKoreanNoodleHouse2
+x=-167;y=-2108;z=25;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MazeBankArenaSouth2
+x=883;y=-2087;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElRanchoBlvdWest2
+x=1203;y=-2078;z=44;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElBurroHeightsWest2
+x=867;y=-2068;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=ElRanchoBlvdWest1
+x=-253;y=-2120;z=22;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MazeBankArenaSouth1
+x=-580;y=-1244;z=13;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=SHoKoreanNoodleHouse1
+x=-531;y=-1022;z=23;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LittleSeoulEast1
+x=-530;y=-726;z=33;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=SnrBunsSouth1
+x=171;y=495;z=143;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=WildOatsDrEast1
+x=-257;y=505;z=123;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=WildOatsDr1
+x=-458;y=552;z=121;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DidionDr1
+x=-672;y=495;z=110;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PicturePerfectDrive1
+x=-1088;y=220;z=62;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MadWayneThunderDr2
+x=-675;y=-290;z=36;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=SessantaNove2
+x=-652;y=-605;z=33;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Lombank2
+x=-699;y=-1062;z=14;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=CrastenbergHotel2
+x=-1018;y=-1248;z=6;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PalominoAve2
+x=-1169;y=-1470;z=3;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MagellanAve2
+x=-1043;y=-1644;z=4;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PuertoDelSol2
+x=-1203;y=-1408;z=4;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MagellanAve1
+x=-877;y=-1191;z=5;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TheViceroyHotel1
+x=-705;y=-1087;z=13;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PalominoAve1
+x=-624;y=-612;z=33;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BetsyONeilPavilion1
+x=-647;y=-301;z=35;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=HelgaKreppsohle1
+x=-1057;y=181;z=60;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=SteeleWay1
+x=-673;y=491;z=110;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PicturePerfectDrive2
+x=-457;y=547;z=121;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DidionDr2
+x=-266;y=503;z=121;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=WildOatsDr2
+x=201;y=501;z=141;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=WildOatsDrEast2
+x=-1664;y=963;z=152;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=NorthRockfordDrNorth2
+x=-1919;y=681;z=126;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=NorthRockfordDrMiddle2
+x=-1962;y=300;z=88;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=NorthRockfordDrSouth2
+x=-1777;y=58;z=68;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=KortzCenter2
+x=-1474;y=-300;z=47;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LasCuadras2
+x=-1272;y=-555;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=CityHall2
+x=-1051;y=-801;z=19;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LSPDNorth2
+x=-764;y=-1150;z=11;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=TheViceroyHotelSouth2
+x=-746;y=-1138;z=11;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BSC1
+x=-1035;y=-786;z=18;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Celltowa1
+x=-1250;y=-548;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=CityHall1
+x=-1507;y=-230;z=51;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=Chido1
+x=-1700;y=18;z=65;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=KortzCenter1
+x=-1948;y=270;z=86;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=NorthRockfordDrSouth1
+x=-1902;y=689;z=127;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=NorthRockfordDrMiddle1
+x=-1653;y=974;z=152;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=NorthRockfordDrNorth1
+x=-1211;y=-1216;z=8;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=VespucciCanals2
+x=-1204;y=-1192;z=8;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=VespucciCanals1
+x=777;y=-938;z=26;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=DarnellBros2
+x=789;y=-1367;z=27;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LosSantosBagCo2
+x=806;y=-1355;z=26;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LosSantosBagCo1
+x=784;y=-779;z=26;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=PopularStNorth1
+x=-2980;y=409;z=16;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RobsLiquor1
+x=-3075;y=777;z=21;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BanhamCanyon1
+x=-2363;y=3429;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=FortZancudo2
+x=-2355;y=3432;z=29;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=FortZancudo1
+x=-3095;y=766;z=21;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=BanhamCanyon2
+x=-3002;y=416;z=16;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=RobsLiquor2
+x=-1479;y=-632;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MarathonAv2
+x=-1410;y=-571;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=MarathonAv1
+x=505;y=-1878;z=27;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=AutoRepairs1
+x=310;y=-1693;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=HayesAutos1
+x=126;y=-1550;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=LaVacaLoca1
+x=108;y=-1551;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=SudsLawLaundromat2
+x=289;y=-1682;z=30;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=HayesAuto2
+x=491;y=-1864;z=28;sprite=513;size=0.5;alpha=150;short_range=true;text=City Bus Stop;name=AutoRepairs2
