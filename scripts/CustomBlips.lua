@@ -133,7 +133,7 @@ local function setSetting(section, key, value)
     if section == "save" then return end
     local section = section or "general"
     local value = value or true
-    scriptSettings[section][key] = tostring(value)
+    scriptSettings[section][key] = value
     writeINI()
 end
 local function ParseBlipLine(line, sep)
