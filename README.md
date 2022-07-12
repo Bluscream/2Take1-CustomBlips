@@ -21,9 +21,10 @@ CustomBlips is meant to be a 2t1 LUA replacement for mods like [CustomBlips.dll]
 
 ## Installation
 1. Download and install the latest version of [Kek's Menu](https://github.com/kektram/Keks-menu#how-to-install)
-2. Download the latest [main.zip](https://github.com/Bluscream/2Take1-CustomBlips/archive/refs/heads/main.zip)
-3. Unpack it to your `%APPDATA%\PopstarDevs\2Take1Menu\` folder
-4. Verify that you have unpacked to the right location by checking wether the file `%APPDATA%\PopstarDevs\2Take1Menu\scripts\CustomBlips.lua` and the folder `%APPDATA%\PopstarDevs\2Take1Menu\cfg\blips\` exist
+2. Download install [fuelMod](https://github.com/Rimmuru/Rimurus-2T1-Scripts/tree/main/Rimurus%20Scripts/FuelMod)
+3. Download the latest [main.zip](https://github.com/Bluscream/2Take1-CustomBlips/archive/refs/heads/main.zip)
+4. Unpack it to your `%APPDATA%\PopstarDevs\2Take1Menu\` folder
+5. Verify that you have unpacked to the right location by checking wether the file `%APPDATA%\PopstarDevs\2Take1Menu\scripts\CustomBlips.lua` and the folder `%APPDATA%\PopstarDevs\2Take1Menu\cfg\blips\` exist
 
 ## Usage
 - To toggle a static list, click on it in the `Script Features/Custom Blips/` menu.
