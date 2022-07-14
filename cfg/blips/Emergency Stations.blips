@@ -2,23 +2,27 @@
 -- category_index=https://docs.fivem.net/natives/?_0x234CDD44D996FD9A
 -- sprite/color=https://docs.fivem.net/docs/game-references/blips/
 
--- x,y,z,entity,sprite,color,size,alpha,secondary_color_r,secondary_color_g,secondary_color_b,route_enabled,route_colour,player,fade_opacity,fade_duration,rotation,flash_duration,flash_p1,hidden_on_legend,high_detail,mission_creator,flashes,flashes_alternate,short_range,priority,displayid,category_index,friendly,extended_height,minimal_on_edge,bright,cone,cone_hudcolorindex,text
-x=293;y=-585;z=30;sprite=61;short_range=true;text=Hospital
-x=282;y=-1419;z=30;sprite=61;short_range=true;text=Hospital
-x=1842;y=3668;z=30;sprite=61;short_range=true;text=Hospital
-x=-228;y=6316;z=30;sprite=61;short_range=true;text=Hospital
-x=-468;y=-359;z=30;sprite=61;short_range=true;text=Hospital
+x=293;y=-585;sprite=61;short_range=true;text=Hospital
+x=282;y=-1419;sprite=61;short_range=true;text=Hospital
+x=1842;y=3668;sprite=61;short_range=true;text=Hospital
+x=-228;y=6316;sprite=61;short_range=true;text=Hospital
+x=-468;y=-359;sprite=61;short_range=true;text=Hospital
 
-x=-655;y=-116;z=30;sprite=436;color=17;short_range=true;text=Fire Station
-x=-385;y=6135;z=30;sprite=436;color=17;short_range=true;text=Fire Station
-x=1200;y=-1452;z=30;sprite=436;color=17;short_range=true;text=Fire Station
-x=222;y=-1636;z=30;sprite=436;color=17;short_range=true;text=Fire Station
+x=-655;y=-116;sprite=436;color=17;short_range=true;text=Fire Station
+x=-385;y=6135;sprite=436;color=17;short_range=true;text=Fire Station
+x=1200;y=-1452;sprite=436;color=17;short_range=true;text=Fire Station
+x=222;y=-1636;sprite=436;color=17;short_range=true;text=Fire Station
 
-x=655;y=-15;z=30;sprite=60;short_range=true;text=Police Station
-x=811;y=-1288;z=30;sprite=60;short_range=true;text=Police Station
-x=404;y=-1605;z=30;sprite=60;short_range=true;text=Police Station
+x=655;y=-15;sprite=60;short_range=true;text=Police Station
+x=811;y=-1288;sprite=60;short_range=true;text=Police Station
+x=404;y=-1605;sprite=60;short_range=true;text=Police Station
 x=-1052;y=-802;z=18;sprite=60;short_range=true;text=Police Station
-x=-556;y=-145;z=30;sprite=60;short_range=true;text=Police Station
-x=-431;y=6041;z=30;sprite=60;short_range=true;text=Police Station
-x=1859;y=3680;z=30;sprite=60;short_range=true;text=Police Station
-x=424;y=-980;z=30;sprite=60;short_range=true;text=Police Station
+x=-556;y=-145;sprite=60;short_range=true;text=Police Station
+x=-431;y=6041;sprite=60;short_range=true;text=Police Station
+x=1859;y=3680;sprite=60;short_range=true;text=Police Station
+x=424;y=-980;sprite=60;short_range=true;text=Police Station
+
+x=2480;y=-405;sprite=60;short_range=true;text=N.O.O.S.E HQ
+x=2053;y=2947;sprite=60;short_range=true;text=IAA Bunker
+x=66;y=-735;sprite=60;short_range=true;text=FIB HQ
+x=1853;y=2605;sprite=285;short_range=true;text=Prison

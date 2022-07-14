@@ -132,13 +132,13 @@ local function setSetting(section, key, value)
     print("setSetting: "..section.."["..key.."] = "..tostring(value))
     if section == "save" then return end
     local section = section or "general"
-    local value = value or true
     scriptSettings[section][key] = value
     writeINI()
 end
 local function ParseBlipLine(line, sep)
     local blip = {}
-    local line = split(line, sep)
+    local line = split(line, " -- ")[1]
+    line = split(line, sep)
     for i,section in ipairs(line) do
         local section = split(section, "=")
         blip[section[1]:lower()] = parseString(section[2])
@@ -191,7 +191,7 @@ end
 staticBlips = {}
 
 local function AddBlip(_blip) -- x,y,z,entity,sprite,color,size,alpha,secondary_color_r,secondary_color_g,secondary_color_b,route_enabled,route_colour,player,fade_opacity,fade_duration,rotation,flash_duration,flash_p1,hidden_on_legend,high_detail,mission_creator,flashes,flashes_alternate,short_range,priority,displayid,category_index,friendly,extended_height,minimal_on_edge,bright,cone,cone_hudcolorindex,text
-    local blip = _blip.x and ui.add_blip_for_coord(v3(_blip.x, _blip.y, _blip.z)) or ui.add_blip_for_entity(_blip.entity)
+    local blip = _blip.x and ui.add_blip_for_coord(v3(_blip.x, _blip.y, _blip.z or 30)) or ui.add_blip_for_entity(_blip.entity)
     if _blip.sprite then ui.set_blip_sprite(blip, _blip.sprite) end
     if _blip.color then ui.set_blip_colour(blip, _blip.color) end
     if _blip.secondary_color_r then hud.set_blip_secondary_colour(blip, _blip.secondary_color_r, _blip.secondary_color_g, _blip.secondary_color_b) end
@@ -353,7 +353,7 @@ local initVehicleMenu = function()
     end
     for i,item in ipairs(scriptMenu.items.vehicles) do
         local isAutostart = scriptSettings.enabledVehicleBlips[item.name]
-        if isAutostart ~= nil then
+        if isAutostart == true then
             item.on = isAutostart
         end
         if system.yield~=nil then system.yield(scriptSettings.general.autoExecDelayMS) end
@@ -391,7 +391,7 @@ local initStaticMenu = function()
     end
     for i,item in ipairs(scriptMenu.items.static) do
         local isAutostart = scriptSettings.enabledStaticLists[item.name]
-        if isAutostart ~= nil then
+        if isAutostart == true then
             item.on = isAutostart
         end
         if system.yield~=nil then system.yield(scriptSettings.general.autoExecDelayMS) end
@@ -410,8 +410,12 @@ local initSettingsMenu = function()
     end)
 
     for setting,value in pairs(scriptSettings.general) do
-        local feat = "action_value_str"; local setting_return_var = "value"
-        if setting == true or setting == false then feat = "bool"; setting_return_var = "on" end
+        local feat = "action_value_str"
+        local setting_return_var = "value"
+        if setting == true or setting == false then
+            feat = "bool"
+            setting_return_var = "on"
+        end
         table.insert(scriptMenu.items.settings, menu.add_feature(setting, feat, scriptMenu.settings.id, function(item)
             setSetting("general", item.name, item[setting_return_var])
         end))
