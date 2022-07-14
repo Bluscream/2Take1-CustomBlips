@@ -2,17 +2,17 @@
 -- category_index=https://docs.fivem.net/natives/?_0x234CDD44D996FD9A
 -- sprite/color=https://docs.fivem.net/docs/game-references/blips/
 
-x=-206;y=-1312;short_range=true;text=Benny's Customs
-x=-1215;y=-582;short_range=true;text=Film Studios
-x=3083.465;y=-4659.136;short_range=true;text=Aircraft Carrier
--- x=-1291;y=6855;short_range=true;text=SottomarinoCoords
-x=-2317;y=3396;short_range=true;text=Fort Zancudo
-x=230;y=213;z=105;short_range=true;text=Central Bank
-x=-1079;y=-262;short_range=true;text=LifeInvader
-x=3421;y=3757;short_range=true;text=Humane Labs
--- x=922;y=47;z=80;short_range=true;text=Casino
-x=-1469;y=65;short_range=true;text=Vanilla Unicorn
-x=-164;y=-2009;short_range=true;text=Maze Bank
-x=232;y=1170;short_range=true;text=Theater
-x=650;y=585;short_range=true;text=Theater
+x=-206;y=-1312;size=0.75;short_range=true;text=Benny's Customs
+x=-1215;y=-582;size=0.75;short_range=true;text=Film Studios
+x=3083.465;y=-4659.136;size=0.75;short_range=true;text=Aircraft Carrier
+-- x=-1291;y=6855;size=0.75;short_range=true;text=SottomarinoCoords
+x=-2317;y=3396;size=0.75;short_range=true;text=Fort Zancudo
+x=230;y=213;z=105;size=0.75;short_range=true;text=Central Bank
+x=-1079;y=-262;size=0.75;short_range=true;text=LifeInvader
+x=3421;y=3757;size=0.75;short_range=true;text=Humane Labs
+-- x=922;y=47;z=80;size=0.75;short_range=true;text=Casino
+x=-1469;y=65;size=0.75;short_range=true;text=Vanilla Unicorn
+x=-164;y=-2009;size=0.75;short_range=true;text=Maze Bank
+x=232;y=1170;size=0.75;short_range=true;text=Theater
+x=650;y=585;size=0.75;short_range=true;text=Theater
 

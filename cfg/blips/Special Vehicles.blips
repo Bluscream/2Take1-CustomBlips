@@ -2,13 +2,13 @@
 -- category_index=https://docs.fivem.net/natives/?_0x234CDD44D996FD9A
 -- sprite/color=https://docs.fivem.net/docs/game-references/blips/
 
-x=-2451;y=2979;short_range=true;text=Batteria
-x=-1845;y=-3148;short_range=true;text=Avenger
-x=3578;y=3658;short_range=true;text=Deluxo
-x=-1888;y=2950;short_range=true;text=APC
-x=1358;y=-2095;short_range=true;text=Ruiner
-x=-1051;y=-3489;short_range=true;text=Apache
-x=503;y=-3375;short_range=true;text=Valkyrie
-x=-80;y=-837;short_range=true;text=Ufficio
-x=1706;y=3252;short_range=true;text=Mig
-x=-2192;y=3298;short_range=true;text=Kanjali
+x=-2451;y=2979;size=0.75;short_range=true;text=Batteria
+x=-1845;y=-3148;size=0.75;short_range=true;text=Avenger
+x=3578;y=3658;size=0.75;short_range=true;text=Deluxo
+x=-1888;y=2950;size=0.75;short_range=true;text=APC
+x=1358;y=-2095;size=0.75;short_range=true;text=Ruiner
+x=-1051;y=-3489;size=0.75;short_range=true;text=Apache
+x=503;y=-3375;size=0.75;short_range=true;text=Valkyrie
+x=-80;y=-837;size=0.75;short_range=true;text=Ufficio
+x=1706;y=3252;size=0.75;short_range=true;text=Mig
+x=-2192;y=3298;size=0.75;short_range=true;text=Kanjali
