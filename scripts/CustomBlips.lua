@@ -191,7 +191,7 @@ end
 staticBlips = {}
 
 local function AddBlip(_blip) -- x,y,z,entity,sprite,color,size,alpha,secondary_color_r,secondary_color_g,secondary_color_b,route_enabled,route_colour,player,fade_opacity,fade_duration,rotation,flash_duration,flash_p1,hidden_on_legend,high_detail,mission_creator,flashes,flashes_alternate,short_range,priority,displayid,category_index,friendly,extended_height,minimal_on_edge,bright,cone,cone_hudcolorindex,text
-    local blip = _blip.x and ui.add_blip_for_coord(v3(_blip.x, _blip.y, _blip.z)) or ui.add_blip_for_entity(_blip.entity)
+    local blip = _blip.x and ui.add_blip_for_coord(v3(_blip.x, _blip.y, _blip.z or 30)) or ui.add_blip_for_entity(_blip.entity)
     if _blip.sprite then ui.set_blip_sprite(blip, _blip.sprite) end
     if _blip.color then ui.set_blip_colour(blip, _blip.color) end
     if _blip.secondary_color_r then hud.set_blip_secondary_colour(blip, _blip.secondary_color_r, _blip.secondary_color_g, _blip.secondary_color_b) end
@@ -375,8 +375,7 @@ local initStaticMenu = function()
             if item.on then
                 -- printtable(coord_blips, 2)
                 for i, _blip in ipairs(blips) do
-                    
-                    print("Adding Blip for ".._blip.text.." at "..tostring(v3(_blip.x,_blip.y,_blip.z)))
+                    print("Adding Blip for ".._blip.text.." at "..tostring(v3(_blip.x,_blip.y,_blip.z or 30)))
                     local blip = AddBlip(_blip)
                     staticBlips[v3(_blip.x,_blip.y,_blip.z)] = blip
                     table.insert(scriptMenu.blips.static[file_name], blip)
